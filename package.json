@@ -1,14 +1,21 @@
 {
-  "name": "midu-links",
+  "name": "cloud-club-utp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Cloud Club UTP - Página web oficial",
+  "main": "index.html",
   "scripts": {
-    "build:styles": "pnpx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch"
+    "dev": "pnpx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch",
+    "build": "pnpx @tailwindcss/cli -i ./input.css -o ./assets/output.css --minify",
+    "preview": "python -m http.server 8000"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cloud",
+    "utp",
+    "aws",
+    "github-pages"
+  ],
+  "author": "Cloud Club UTP",
+  "license": "MIT",
   "packageManager": "pnpm@10.8.0",
   "dependencies": {
     "@midudev/tailwind-animations": "^0.2.0",
